@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    height: 100vh;
+    padding: 2px;
+    gap: 5px;
+}
+
+.saudacao{
+    display: flex;
+    border: 1px solid blue;
+    height: 25px;
+    width: auto;
+    padding: 3px;
+    text-align: center;
+    align-items: center;
+}
+
+.saudacao > h1{
+    font-size: 18px;
+}
+
+.exame-paciente{
+    border: 1px solid green;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.add-paciente{
+    border: 1px solid;
+    height: 10%;
+    padding: 5px;
+    margin: 10px 0px 20px 0px;
+}
+
+.exames-ativos{
+    border: 1px solid yellowgreen;
+    height: 85%;
+    padding: 5px;
+}
+
+.paciente{
+    border: 1px solid red;
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin-top: 15px;
+}

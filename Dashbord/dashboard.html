@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard.css">
+    <script src="script.js"></script>
+    <title>Dashboard do Administrador | somente computador</title>
+</head>
+<body>
+    <div class="container">
+        <header class="saudacao">
+            <h1>Olá Administrador</h1>
+        </header>
+
+        <div class="exame-paciente">
+            <div class="add-paciente">
+                <div class="input-box">
+                    <input type="text" placeholder="CNS" id="cns_paciente" maxlength="15">
+                    <input type="date" >
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" placeholder="Nome do Paciente" id="nome_paciente" maxlength="50">
+                    <input type="text" placeholder="Ultrasson" id="USG">
+                </div>
+
+                <button onclick="addPaciente()">Adicionar</button>
+            </div>
+            <div class="exames-ativos"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
