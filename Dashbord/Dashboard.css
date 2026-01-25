@@ -9,7 +9,6 @@
 .container{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     height: 100vh;
     padding: 2px;
     gap: 5px;
@@ -18,7 +17,6 @@
 .saudacao{
     display: flex;
     border: 1px solid blue;
-    height: 25px;
     width: auto;
     padding: 3px;
     text-align: center;
@@ -26,31 +24,66 @@
 }
 
 .saudacao > h1{
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 .exame-paciente{
-    border: 1px solid green;
     height: 100%;
     padding: 5px;
-
+    text-align: center;
 }
 
 .add-paciente{
+    display: flex;
     border: 1px solid;
-    height: 10%;
+    gap: 8px;
     padding: 5px;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.left_column{
+    border: 1px solid blue;
+    text-align: left;
+    width: 50%;
+}
+
+.rigth_column{
+    border: 1px solid purple;
+    width: 50%;
+    padding: 5px;
+}
+
+.rigth_column ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 8px;
+}
+
+.rigth_column li{
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.addPaciente{
+    margin: 0px 0px 10px 0px;
+    width: 50%;
+    font-size: 1.2rem;
+
 }
 
 .exames-ativos{
-    border: 1px solid yellowgreen;
-    height: 85%;
+    border: 1px solid blue;
+    height: 80vh;
     padding: 5px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .paciente{
     border: 1px solid red;
+    text-align: left;
     padding: 0.5rem;
     border-radius: 15px;
     margin-top: 15px;
