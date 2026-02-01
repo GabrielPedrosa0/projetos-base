@@ -14,9 +14,42 @@
     gap: 5px;
 }
 
+.aviso{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    padding: 5px;
+    right: 10px;
+    border: 2px solid rgba(252, 87, 87, 0.587);
+    height: 65px;
+    width: 16rem;
+    font-size: 1.2rem;
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    transform: translateX(10px);
+}
+
+.aviso i{
+    font-size: 2.5rem;
+}
+
+.aviso.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+#importatante{
+    border-bottom: 2px solid red;
+}
+
 .saudacao{
     display: flex;
-    border: 1px solid blue;
     width: auto;
     padding: 3px;
     text-align: center;
@@ -35,17 +68,37 @@
 
 .add-paciente{
     display: flex;
-    border: 1px solid;
     gap: 8px;
     padding: 5px;
     margin: 10px 0px 10px 0px;
 }
 
 .left_column{
+    display: flex;
     border: 1px solid blue;
     text-align: left;
     width: 50%;
+    padding: 10px;
 }
+
+.left_column .input-box{
+    width: 50%;
+}
+
+.left_column input{
+    width: 90%;
+    height: 1.5rem;
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.left_column input:hover{
+    border-bottom: 2px solid blue;
+}
+
 
 .rigth_column{
     border: 1px solid purple;
@@ -87,4 +140,13 @@
     padding: 0.5rem;
     border-radius: 15px;
     margin-top: 15px;
+}
+
+.usgRemove{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }

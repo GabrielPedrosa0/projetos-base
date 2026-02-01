@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <script src="script.js"></script>
     <title>Dashboard do Administrador | somente computador</title>
 </head>
@@ -17,23 +18,25 @@
             <div class="add-paciente">
                 <div class="left_column">
                     <div class="input-box">
-                        <input type="text" placeholder="CNS" id="cns_paciente" maxlength="15">
-                        <input type="date" id="exame_date">
-                    </div>
-                
-                    <div class="input-box">
+                        <label for="CNS"><input type="text" placeholder="CNS" id="cns_paciente" maxlength="15"></label>
                         <input type="text" placeholder="Nome do Paciente" id="nome_paciente" maxlength="50">
                         
-                        <select name="Ultrasson" id="usg">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="date" id="exame_date">
+                        <select name="Ultrasson" id="usg" style="width: 75%;">
                             <option value="" selected>Escolha</option>
-                            <option value="US ABT">Ultrassonografia de Abdomen total</option>
-                            <option value="US TV">Ultrassonografia Transvaginal</option>
-                            <option value="US PELV">Ultrassonografia Pelvica</option>
+                            <option value="USG de Abdomen total">Ultrassonografia de Abdomen total</option>
+                            <option value="USG Transvaginal">Ultrassonografia Transvaginal</option>
+                            <option value="USG Pelvica">Ultrassonografia Pelvica</option>
                             <option value="US PROS">Ultrassonografia de Prostata</option>
                             <option value="US PROS(VA)">Ultrassonografia de Prostata (por via abdominal)</option>
-                        </select>
-                        <input type="submit" value="+" onclick="addUSG()">
+                    </select>
+                    <button onclick="addUSG()" style="border-radius: 100px; width: 30px; height: 30px;"><i class="ri-sticky-note-add-fill"></i></button>
                     </div>
+
+                    
                 </div>
                 
                 <div class="rigth_column">
@@ -43,11 +46,15 @@
 
             </div>
 
-            <button onclick="addPaciente()" class="addPaciente">Adicionar</button>
+            <button onclick="addPaciente()" class="addPaciente"><i class="ri-user-add-fill"></i> Adicionar</button>
 
             <div class="exames-ativos"></div>
         </div>
         
+        <div class="aviso" >
+            <i class="ri-close-circle-fill"></i>
+            <p>Prencha todos os campos</p>
+        </div>
     </div>
 </body>
 </html>
